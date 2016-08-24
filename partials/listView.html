@@ -1,0 +1,26 @@
+<input type="checkbox" ng-model="someBooleanValue">
+<table>
+  <caption>
+    <input type="text" ng-model="searchOn">
+  </caption>
+  <thead ng-class="{'header': true}">
+    <tr>
+      <th ng-click="onCol = 'empId'">Id</th>
+      <th ng-click="onCol = 'firstName'">First Name</th>
+      <th ng-click="onCol = 'lastName'">Last Name</th>
+      <th ng-click="onCol = 'emailId'">DOJ</th>
+      <th ng-click="onCol = 'salary'">Bench</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="emp in emps | orderBy : onCol | filter : searchOn" ng-class-even="'even'" ng-class-odd="'odd'">
+      <td>{{emp.empId}}</td>
+      <td>{{emp.firstName}}</td>
+      <td>{{emp.lastName}}</td>
+      <td>{{emp.emailId }}</td>
+      <td>{{emp.salary 	}}</td>
+      <td><a ng-href="#/emp-details/{{emp.empId}}">Edit</a></td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,19 @@
+<form>
+  <div>
+    <span>ID:</span>
+    <span>{{emp.id}}</span>
+  </div>
+  <div><span>First Name: </span>
+    <input type="text" ng-model="emp.firstName">
+  </div>
+  <div><span>Last Name: </span>
+    <input type="text" ng-model="emp.lastName">
+  </div>
+  <div><span>DOJ: </span>
+    <input type="date" ng-model="emp.emailId">
+  </div>
+  <div><span>Bench: </span>
+    <input type="checkbox" ng-model="emp.salary">
+  </div>
+  <button ng-click="save()">Save</button>
+</form>

@@ -1,0 +1,14 @@
+/* Styles go here */
+
+.header {
+  background-color: #999d8c;
+  color: white;
+}
+
+.even {
+  background-color: #b9d7d7;
+}
+
+.odd {
+  background-color: #e7d9ea;
+}
